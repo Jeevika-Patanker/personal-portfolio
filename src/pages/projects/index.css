@@ -1,0 +1,328 @@
+.projects-section {
+  color: #fff;
+  /* padding: 4rem 2rem; */
+  margin: auto;
+}
+
+.projects-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.projects-header h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.projects-header p {
+  color: #aaa;
+  max-width: 600px;
+  margin: 0.5rem auto 0;
+  font-size: 1rem;
+}
+
+.work-process {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.work-process h3 {
+  text-align: center;
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  color: white;
+}
+
+.process-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+/* Horizontal line connecting steps */
+.process-grid::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  right: 5%;
+  height: 2px;
+  background: rgba(0, 255, 255, 0.2);
+  z-index: 0;
+}
+
+.process-step {
+  flex: 1 1 150px;
+  max-width: 200px;
+  position: relative;
+  background-color: #1a1a1a;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow:
+    0 0 10px rgba(0, 255, 255, 0.15),
+    0 0 20px rgba(0, 255, 255, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  opacity: 0;
+  animation: fadeSlideUp 0.8s ease forwards;
+  z-index: 1;
+  /* Above the connecting line */
+}
+
+/* Glowy hover */
+.process-step:hover {
+  transform: translateY(-5px);
+  box-shadow:
+    0 0 12px rgba(0, 255, 255, 0.25),
+    0 0 24px rgba(0, 255, 255, 0.15);
+}
+
+.step-icon {
+  background: rgb(245, 252, 252);
+  color: #000;
+  font-size: 1.5rem;
+  width: 48px;
+  height: 48px;
+  margin: 0 auto 0.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow:
+    0 0 8px rgba(0, 255, 255, 0.6),
+    0 0 12px rgba(0, 255, 255, 0.4);
+}
+
+.process-step h4 {
+  font-size: 1rem;
+  margin: 0.5rem 0 0.25rem;
+  color: #fff;
+}
+
+.process-step p {
+  font-size: 0.85rem;
+  color: #ccc;
+}
+
+/* Animation keyframes */
+@keyframes fadeSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Staggered animation */
+.process-step:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.process-step:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.process-step:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.process-step:nth-child(4) {
+  animation-delay: 0.8s;
+}
+
+/* Responsive: remove line for stacked layout */
+/* @media (max-width: 768px) {
+  .process-grid::before {
+    display: none;
+  }
+} */
+
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  max-width: 900px;
+  margin: 50px auto;
+
+}
+
+.project-card {
+  background-color: #111;
+  border: 1px solid #333;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow:
+    0 0 8px rgba(0, 255, 255, 0.6),
+    0 0 12px rgba(0, 255, 255, 0.4);
+}
+
+.project-image {
+  background-color: #958686;
+  color: #555;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.project-content {
+  padding: 1rem;
+}
+
+.project-content h4 {
+  margin: 0 0 0.5rem;
+}
+
+.project-content p {
+  font-size: 0.9rem;
+  color: #bbb;
+  margin-bottom: 0.75rem;
+}
+
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.tech-tag {
+  background: #333;
+  color: #fff;
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+}
+
+.project-links {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.project-links .btn {
+  background: #fff;
+  color: #000;
+  padding: 0.4rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  text-decoration: none;
+}
+.project-image {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  opacity: 1;
+}
+
+/* Overlay with translucent aqua */
+.project-image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 255, 255, 0.15); /* translucent aqua */
+  border-radius: 12px;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+/* Remove overlay on hover for clarity */
+.project-card:hover .project-image::after {
+  opacity: 0;
+}
+
+
+@media (max-width: 768px) {
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+    padding: 0 1rem;
+  }
+
+  .project-card {
+    width: 95%;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .projects-header h2 {
+    font-size: 1.5rem;
+    margin-top: 65px;
+  }
+
+  .projects-header p {
+    font-size: 0.9rem;
+    padding: 0 1rem;
+  }
+
+  .process-grid {
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+
+  .process-grid::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background: rgba(0, 255, 255, 0.2);
+    z-index: 0;
+  }
+
+  .process-step {
+    /* max-width: 90%; */
+    margin: 2rem 0;
+    z-index: 1;
+  }
+
+  /* Align the step icon with vertical line */
+  .step-icon {
+    position: relative;
+    z-index: 2;
+  }
+
+  /* Optional: reduce font sizes in work process for small screens */
+  .work-process h3 {
+    font-size: 1rem;
+  }
+
+  .process-step h4 {
+    font-size: 0.95rem;
+  }
+
+  .process-step p {
+    font-size: 0.8rem;
+  }
+
+  .project-content h4 {
+    font-size: 1rem;
+  }
+
+  .project-content p {
+    font-size: 0.85rem;
+  }
+
+  .project-links .btn {
+    font-size: 0.8rem;
+    padding: 0.4rem 0.6rem;
+  }
+}

@@ -1,0 +1,181 @@
+/* Home.css */
+
+.home-wrapper {
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  position: relative;
+  padding: 0 80px;
+  font-family: Arial, sans-serif;
+}
+
+.home-content {
+  text-align: center;
+  margin: auto;
+  padding-top: 50px;
+}
+
+.profile-pic {
+  margin: 0 auto 30px;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background-color: #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.profile-pic {
+  margin: 0 auto 30px;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.profile-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.name {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.role {
+  font-size: 1.5rem;
+  color: #aaa;
+  margin: 10px 0;
+}
+
+.bio {
+  font-size: 1rem;
+  max-width: 600px;
+  margin: 20px auto;
+  color: #bbb;
+}
+
+.buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.btn-primary {
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.btn-secondary {
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #555;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+}
+
+.scroll {
+  margin-top: 40px;
+  color: #888;
+  font-size: 0.9rem;
+}
+
+/* Scroll Animation */
+@keyframes bounceDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(6px);
+  }
+}
+
+.animate-scroll {
+  animation: bounceDown 1.5s infinite;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+@media (max-width: 768px) {
+  .home-wrapper {
+    padding: 0 30px;
+    flex-direction: column;
+  }
+
+  .name {
+    font-size: 2.2rem;
+  }
+
+  .role {
+    font-size: 1.2rem;
+  }
+
+  .bio {
+    font-size: 0.95rem;
+    padding: 0 10px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: 50%;
+    font-size: 0.95rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-wrapper {
+    padding: 0 20px;
+  }
+
+  .name {
+    font-size: 1.8rem;
+  }
+
+  .role {
+    font-size: 1rem;
+  }
+
+  .bio {
+    font-size: 0.9rem;
+  }
+
+  .profile-pic {
+    width: 120px;
+    height: 120px;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: 50%;
+    font-size: 0.9rem;
+  }
+
+  .scroll {
+    font-size: 0.8rem;
+    margin-top: 30px;
+  }
+}
