@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/personal-portfolio/static/css/main.d391cb27.css",
-    "main.js": "/personal-portfolio/static/js/main.a90b4ae0.js",
+    "main.css": "/personal-portfolio/static/css/main.72100f24.css",
+    "main.js": "/personal-portfolio/static/js/main.087d8be9.js",
     "static/js/453.bcfa99f6.chunk.js": "/personal-portfolio/static/js/453.bcfa99f6.chunk.js",
     "static/media/Certificates.pdf": "/personal-portfolio/static/media/Certificates.784c99f39f1b81deed40.pdf",
     "static/media/real-trust.png": "/personal-portfolio/static/media/real-trust.ddc2e8c1f631c94c3416.png",
@@ -10,12 +10,12 @@
     "static/media/expanse.png": "/personal-portfolio/static/media/expanse.c15d5e0f165586f7bd31.png",
     "static/media/jeevika.jpg": "/personal-portfolio/static/media/jeevika.87a3bf8a86e327e8cd32.jpg",
     "index.html": "/personal-portfolio/index.html",
-    "main.d391cb27.css.map": "/personal-portfolio/static/css/main.d391cb27.css.map",
-    "main.a90b4ae0.js.map": "/personal-portfolio/static/js/main.a90b4ae0.js.map",
+    "main.72100f24.css.map": "/personal-portfolio/static/css/main.72100f24.css.map",
+    "main.087d8be9.js.map": "/personal-portfolio/static/js/main.087d8be9.js.map",
     "453.bcfa99f6.chunk.js.map": "/personal-portfolio/static/js/453.bcfa99f6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d391cb27.css",
-    "static/js/main.a90b4ae0.js"
+    "static/css/main.72100f24.css",
+    "static/js/main.087d8be9.js"
   ]
 }
